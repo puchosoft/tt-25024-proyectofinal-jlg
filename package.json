@@ -1,0 +1,30 @@
+{
+  "name": "tt-25024-proyectofinal-jlg",
+  "version": "1.0.0",
+  "description": "- El proyecto está desarrollado en Node.JS\r - Implementa un CRUD incompleto mediante los metodos GET, POST y DELETE",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puchosoft/tt-25024-proyectofinal-jlg.git"
+  },
+  "keywords": [],
+  "author": "Jose Luis Gonzalez",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/puchosoft/tt-25024-proyectofinal-jlg/issues"
+  },
+  "homepage": "https://github.com/puchosoft/tt-25024-proyectofinal-jlg#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "firebase": "^12.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

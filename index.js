@@ -16,7 +16,7 @@ app.use(cors());
 app.use('/api/products', productRoutes);
 
 // Rutas de autenticación
-app.use('/api/auth', authRoutes);
+app.use('/auth', authRoutes);
 
 // Middleware para manejar errores 404
 app.use((req, res, next) => {

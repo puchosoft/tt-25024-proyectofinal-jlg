@@ -1,6 +1,6 @@
 // product.model.js
 
-import { db } from '../data/data.js';
+import { db } from '../config/ddbb.js';
 import { collection, getDocs, getDoc, addDoc, deleteDoc, doc } from 'firebase/firestore';
 
 const productsCollection = collection(db, 'products');

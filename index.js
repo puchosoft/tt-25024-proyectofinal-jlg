@@ -2,18 +2,19 @@
 
 import express from 'express';
 import cors from 'cors';
+import {authentication} from './src/middlewares/authentication.js';
 import productRoutes from './src/routes/products.routes.js';
 import authRoutes from './src/routes/auth.routes.js';
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
-// Middleware
+// Middlewares
 app.use(express.json());
 app.use(cors());
 
 // Rutas de productos
-app.use('/api/products', productRoutes);
+app.use('/api/products', authentication, productRoutes);
 
 // Rutas de autenticación
 app.use('/auth', authRoutes);

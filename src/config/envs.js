@@ -14,5 +14,8 @@ export const envs = {
         appId: process.env.FIREBASE_APP_ID
     },
 
-    jwtSecretKey: process.env.JWT_SECRET_KEY
+    jwt: {
+        secretKey: process.env.JWT_SECRET_KEY,
+        expiresIn: process.env.JWT_EXPIRES_IN || '1h'
+    }
 };
